@@ -8,7 +8,7 @@ gsap.registerPlugin(useGSAP);
 const Hero = () => {
   return (
     <section
-      id="hero"
+      id="home"
       className="relative overflow-hidden lg:min-h-screen"
     >
       {/* Background */}
@@ -37,7 +37,7 @@ const Hero = () => {
             </h1>
           </div>
 
-          <p className="text-[#eabe7b] text-base sm:text-lg md:text-xl relative z-10 pointer-events-none">
+          <p className="text-[#9945ac] text-base sm:text-lg md:text-xl relative z-10 pointer-events-none">
             Let's make something great
           </p>
 
@@ -57,6 +57,11 @@ const Hero = () => {
           />
         </div>
       </div>
+
+
+      {/* Additional floating elements */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-xl animate-pulse delay-700"></div>
+      <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-pink-400/20 to-blue-400/20 rounded-full blur-xl animate-pulse delay-1000"></div>
     </section>
   );
 };
