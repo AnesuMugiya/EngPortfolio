@@ -210,27 +210,31 @@ section {
   }
 
   .cta-button {
-    @apply px-4 py-4 rounded-lg bg-black border-[#f4c331] hover:border-1 flex justify-center items-center relative cursor-pointer overflow-hidden;
+    @apply px-4 py-4 rounded-lg backdrop-blur-lg bg-white/10 border-[#f4c331] hover:border 
+    active:border
+    flex justify-center items-center relative cursor-pointer overflow-hidden;
 
+    @media (hover: hover) and (pointer: fine) {
     .bg-circle {
       @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
         w-[120%] h-[120%] group-hover:size-10 group-hover:right-10
-        rounded-full bg-[#f4c331] transition-all duration-500;
-    }
+        rounded-full bg-[#f4c331] transition-all duration-500 border border-[#f4c331];
+    } }
 
     .text {
       @apply uppercase md:text-lg text-white transition-all duration-500
-        group-hover:text-white group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
+        group-hover:text-white group-hover:-translate-x-5 xl:translate-x-0 active:-translate-x-5;
     }
 
+      @media (hover: hover) and (pointer: fine) {
     .arrow-wrapper {
       @apply group-hover:bg-[#f4c331] size-10 rounded-full absolute right-10 top-1/2 
         -translate-y-1/2 flex justify-center items-center overflow-hidden;
-
+      @media (hover: hover)and (pointer: fine){
       img {
         @apply hidden md:block size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500 ;
-      }
-    }
+      }}
+    }}
   }
 
   .card-border {
