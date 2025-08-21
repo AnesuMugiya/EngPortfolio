@@ -28,7 +28,7 @@ const Hero = () => {
           waveFrequency={1.4}
           waveSpeed={0.03}
         />
-        <div className="absolute inset-0 bg-black/80 pointer-events-none" />
+        <div className="absolute inset-0 bg-black/79 pointer-events-none" />
       </div>
 
       {/* Hero layout */}
