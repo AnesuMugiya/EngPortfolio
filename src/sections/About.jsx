@@ -13,7 +13,7 @@ function About() {
         </div>
 
           <div className="ml-auto place-self-center lg:col-span-7">
-              <h1 className="max-w-2xl mb-7 tracking-tight leading-nonexl:text-6xl font-semibold md:text-5xl text-3xl ">About Me</h1>
+              <h1 className="max-w-2xl pb-3 mb-7 tracking-tight leading-nonexl:text-6xl font-semibold md:text-5xl text-3xl ">About Me</h1>
               <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-300">
                 I am an Electrical and Computer Engineering student, 
                 currently on track to graduate with Honors. My academic journey 
@@ -35,7 +35,7 @@ function About() {
               
               <a
                 href="/cv.pdf"
-                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-[#f4c331] border border-white-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-800 dark:hover:bg-white dark:focus:ring-white"
+                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-[#f4c331] hover:text-white  border rounded-lg  focus:ring-4 hover:border-none border-gray-500 hover:bg-[#f4c331]  focus:ring-white"
               >
                 Download CV
               </a>
