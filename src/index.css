@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @import "tailwindcss";
 
 :root {
@@ -12,7 +14,7 @@ body {
   background-color: black;
   color: white;
   scroll-behavior: smooth;
-  font-family: "Mona Sans", sans-serif;
+  font-family: "Mona Sans", "DM Serif Display", sans-serif;
 }
 
 section {
@@ -21,6 +23,7 @@ section {
 
 @theme {
   --font-sans: "Mona Sans", sans-serif;
+  --font-curl: "DM Serif Display", serif;
   --color-white-50: #d9ecff;
   --color-black-50: #1c1c21;
   --color-black-100: #0e0e10;
@@ -207,21 +210,21 @@ section {
   }
 
   .cta-button {
-    @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden;
+    @apply px-4 py-4 rounded-lg bg-black border-[#f4c331] hover:border-1 flex justify-center items-center relative cursor-pointer overflow-hidden;
 
     .bg-circle {
       @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
         w-[120%] h-[120%] group-hover:size-10 group-hover:right-10
-        rounded-full bg-white transition-all duration-500;
+        rounded-full bg-[#f4c331] transition-all duration-500;
     }
 
     .text {
-      @apply uppercase md:text-lg text-black transition-all duration-500
-        group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
+      @apply uppercase md:text-lg text-white transition-all duration-500
+        group-hover:text-white group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
     }
 
     .arrow-wrapper {
-      @apply hidden md:block group-hover:bg-white-50 size-10 rounded-full absolute right-10 top-1/2 
+      @apply group-hover:bg-[#f4c331] size-10 rounded-full absolute right-10 top-1/2 
         -translate-y-1/2 flex justify-center items-center overflow-hidden;
 
       img {

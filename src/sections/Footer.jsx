@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="flex flex-col justify-center">
+        <div className="flex text-white flex-col justify-center">
           <p>Terms & Conditions</p>
         </div>
         <div className="socials">
@@ -15,7 +15,7 @@ const Footer = () => {
           ))}
         </div>
         <div className="flex flex-col justify-center">
-          <p className="text-center md:text-end">
+          <p className="text-center text-white md:text-end">
             © {new Date().getFullYear()} Anesu Mugiya. All rights reserved.
           </p>
         </div>

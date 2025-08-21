@@ -168,10 +168,10 @@ export default function ContactForm() {
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl w-full">
           
           <div className="flex flex-col justify-center">
-            <h1 className="text-5xl font-extrabold leading-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-(family-name:--font-curl) font-medium leading-tight">
               Let's get <br /> started.
             </h1>
-            <p className="mt-4 text-sm font-medium tracking-widest text-gray-400 uppercase">
+            <p className="mt-4 text-sm font-medium tracking-widest text-[#f4c331] uppercase">
               Contact Me!
             </p>
           </div>
@@ -183,7 +183,7 @@ export default function ContactForm() {
               <div className="min-w-[160px] mb-4 flex-1 relative">
                 <input 
                   type="text" 
-                  placeholder="JOHN SMITH" 
+                  placeholder="INSERT YOUR NAME HERE" 
                   value={formData.name}
                   onChange={(e) => handleInputChange('name', e.target.value)}
                   onBlur={() => validateForm()}
@@ -202,7 +202,7 @@ export default function ContactForm() {
               <div className="min-w-[200px] mb-4 flex-1 relative">
                 <input 
                   type="text" 
-                  placeholder="WEBSITE OR APP DESIGN OR ETC" 
+                  placeholder="ML PROJECT, HARDWARE, ETC" 
                   value={formData.projectType}
                   onChange={(e) => handleInputChange('projectType', e.target.value)}
                   onBlur={() => validateForm()}
@@ -241,13 +241,13 @@ export default function ContactForm() {
 
             <div className="mt-12">
               {submitStatus === 'success' && (
-                <div className="mb-4 p-3 bg-green-900/30 border border-green-500 rounded-md text-green-400 text-sm">
+                <div className="mb-4 p-3   rounded-md text-green-400 text-sm">
                   ✓ Message sent successfully! I'll get back to you soon.
                 </div>
               )}
               
               {submitStatus === 'mailto' && (
-                <div className="mb-4 p-3 bg-blue-900/30 border border-blue-500 rounded-md text-blue-400 text-sm">
+                <div className="mb-4 p-3 rounded-md text-blue-400 text-sm">
                   ✓ Your email client should open. Please send the email from there.
                 </div>
               )}
@@ -265,7 +265,7 @@ export default function ContactForm() {
                 className={`px-6 py-3 font-semibold tracking-widest rounded-md transition-all duration-200 ${
                   isFormValid() && !isSubmitting
                     ? 'bg-white text-black hover:bg-gray-200 hover:scale-105 transform cursor-pointer'
-                    : 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                    : 'bg-amber-500/20 text-gray-400 cursor-not-allowed'
                 }`}
               >
                 {isSubmitting ? '— SENDING...' : '— SEND INFO'}

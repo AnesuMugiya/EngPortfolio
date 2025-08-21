@@ -61,9 +61,9 @@ const Works = () => {
       
     >
       {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 ">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-amber-400/20 rounded-full blur-3xl animate-pulse delay-1000 -z-0"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
@@ -99,10 +99,10 @@ const Works = () => {
               
               {/* Active filter glow effect */}
               {activeFilter === filter && (
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/50 to-purple-400/50 blur-sm"></div>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-amber-100/50 to-amber-400/50 blur-sm"></div>
               )}
               
-              <span className="relative z-10">{filter}</span>
+              <span className="relative z-5">{filter}</span>
             </button>
           ))}
         </div>
@@ -121,10 +121,10 @@ const Works = () => {
               <div className="relative backdrop-blur-lg bg-white/10 rounded-2xl overflow-hidden border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:bg-white/15 hover:border-white/30">
                 
                 {/* Hover glow effect */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/20 via-transparent to-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-white/20 via-transparent to-amber-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 {/* Image container with overlay */}
-                <div className="relative h-48 sm:h-52 lg:h-48 xl:h-52 overflow-hidden">
+                <div className="pointer-events-none relative h-48 sm:h-52 lg:h-48 xl:h-52 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -132,15 +132,15 @@ const Works = () => {
                   />
                   
                   {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>
                   
                   {/* Floating action buttons */}
-                  <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                  <div className="z-10 absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 backdrop-blur-md bg-white/20 rounded-full text-white hover:bg-white/30 transition-all duration-200 hover:scale-110"
+                      className="z-10 p-2 backdrop-blur-md bg-white/20 rounded-full text-white hover:bg-white/30 transition-all duration-200 hover:scale-110"
                     >
                       <FiGithub size={16} />
                     </a>
@@ -166,7 +166,7 @@ const Works = () => {
                 
                 {/* Content */}
                 <div className="relative p-6">
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-200 transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-amber-200 transition-colors duration-300">
                     {project.title}
                   </h3>
                   <p className="text-white/70 text-sm leading-relaxed mb-4 group-hover:text-white/80 transition-colors duration-300">
@@ -194,7 +194,7 @@ const Works = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-white/70 hover:text-white transition-all duration-200 text-sm font-medium group/link"
+                      className="z-10 flex items-center text-white/70 hover:text-white transition-all duration-200 text-sm font-medium group/link"
                     >
                       <FiGithub className="mr-2 group-hover/link:rotate-12 transition-transform duration-200" size={16} />
                       <span className="group-hover/link:translate-x-1 transition-transform duration-200">View Code</span>
@@ -214,7 +214,7 @@ const Works = () => {
                 </div>
 
                 {/* Shimmer effect on hover */}
-                <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                <div className="pointer-events-none z-5 absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                 </div>
               </div>
@@ -234,8 +234,8 @@ const Works = () => {
       </div>
 
       {/* Additional floating elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-xl animate-pulse delay-700"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-pink-400/20 to-blue-400/20 rounded-full blur-xl animate-pulse delay-1000"></div>
+      <div className="pointer-events-none absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-amber-400/50 to-amber-100/20 rounded-full blur-xl animate-pulse delay-700"></div>
+      <div className="pointer-events-none absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-amber-400/50 to-amber-100/20 rounded-full blur-xl animate-pulse delay-1000"></div>
     </section>
   );
 };

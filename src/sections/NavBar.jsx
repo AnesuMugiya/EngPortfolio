@@ -73,7 +73,7 @@ const NavBar = () => {
           {/* Logo/Name */}
           <a 
             href="#home" 
-            className="text-2xl font-bold text-[#b650cd] transition hover:text-[#341539]"
+            className="text-2xl font-medium font-(family-name:--font-curl) text-[#f4c331] transition hover:text-[#b59410]"
           >
             Anesu.
           </a>
@@ -84,7 +84,7 @@ const NavBar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-slate-300 hover:text-blue-400 transition-colors duration-300"
+                className="text-white hover:text-[#b59410] transition-colors duration-300"
               >
                 {link.name}
               </a>
@@ -97,7 +97,7 @@ const NavBar = () => {
               href="https://github.com/AnesuMugiya/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-slate-300 hover:text-blue-400 transition-colors"
+              className="text-[#f4c331] hover:text-[#b59410] transition-colors"
             >
               <FaGithub size={20} />
             </a>
@@ -105,13 +105,13 @@ const NavBar = () => {
               href="https://www.linkedin.com/in/anesu-mugiya/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-slate-300 hover:text-blue-400 transition-colors"
+              className="text-[#f4c331] hover:text-[#b59410] transition-colors"
             >
               <FaLinkedin size={20} />
             </a>
             <a 
               href="mailto:anesutmugiya@gmail.com" 
-              className="text-slate-300 hover:text-blue-400 transition-colors"
+              className="text-[#f4c331] hover:text-[#b59410] transition-colors"
             >
               <HiOutlineMail size={22} />
             </a>
@@ -133,7 +133,7 @@ const NavBar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="block py-2 text-slate-300 hover:text-blue-400 transition-colors"
+                className="block py-2 text-slate-300 hover:text-[#b59410] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
@@ -144,7 +144,7 @@ const NavBar = () => {
                 href="https://github.com/yourusername" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-slate-300 hover:text-blue-400 transition-colors"
+                className="text-slate-300 hover:text-[#b59410] transition-colors"
               >
                 <FaGithub size={20} />
               </a>
@@ -152,13 +152,13 @@ const NavBar = () => {
                 href="https://linkedin.com/in/yourusername" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-slate-300 hover:text-blue-400 transition-colors"
+                className="text-slate-300 hover:text-[#b59410] transition-colors"
               >
                 <FaLinkedin size={20} />
               </a>
               <a 
                 href="mailto:your.email@example.com" 
-                className="text-slate-300 hover:text-blue-400 transition-colors"
+                className="text-slate-300 hover:text-[#b59410] transition-colors"
               >
                 <HiOutlineMail size={22} />
               </a>
