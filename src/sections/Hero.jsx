@@ -2,6 +2,10 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Typewriter from "../components/Typewriter";
 import Button from "../components/Button";
+// import '../constants/wavy.js';
+import WavyImage from "../components/WavyImage";
+
+import ChromaticWavyImage from "../components/ChromaticWavyImage";
 
 gsap.registerPlugin(useGSAP);
 
@@ -13,7 +17,7 @@ const Hero = () => {
     >
       {/* Background */}
       <div className="absolute top-0 left-0 z-0 w-full">
-        <img src="/images/g.jpg" alt="" className="w-full h-auto" />
+        <img src="https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?q=80&w=1048&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full h-auto" />
       </div>
 
       {/* Hero layout */}
@@ -37,7 +41,7 @@ const Hero = () => {
             </h1>
           </div>
 
-          <p className="text-[#9945ac] text-base sm:text-lg md:text-xl relative z-10 pointer-events-none">
+          <p className="text-[#b650cd] text-base sm:text-lg md:text-xl relative z-10 pointer-events-none">
             Let's make something great
           </p>
 
@@ -56,12 +60,28 @@ const Hero = () => {
             className="rounded-2xl shadow-lg w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl h-auto object-contain"
           />
         </div>
+        
+
+        {/* <div id="imageContainer" className="flex justify-center lg:justify-end w-full h-[80vh] lg:w-1/2">
+        <WavyImage src="/images/avatar.png" id="myImage" className="rounded-2xl shadow-lg w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl h-[80-vh] object-contain" />
+      </div> */}
+      
+        {/* <div className="flex justify-center lg:justify-end w-full lg:w-1/2 bg-transparent">
+          <ChromaticWavyImage
+          src="/images/avatar.png"
+          className="rounded-2xl shadow-lg w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl bg-transparent"
+        />
+        </div> */}
+
+
+
+
+
       </div>
 
 
-      {/* Additional floating elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-xl animate-pulse delay-700"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-pink-400/20 to-blue-400/20 rounded-full blur-xl animate-pulse delay-1000"></div>
+
+      
     </section>
   );
 };

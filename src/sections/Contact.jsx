@@ -172,7 +172,7 @@ export default function ContactForm() {
               Let's get <br /> started.
             </h1>
             <p className="mt-4 text-sm font-medium tracking-widest text-gray-400 uppercase">
-              Contact Form
+              Contact Me!
             </p>
           </div>
 
@@ -180,7 +180,7 @@ export default function ContactForm() {
             <div className="flex flex-wrap items-baseline gap-2 text-lg leading-relaxed">
               
               <span className="text-3xl font-bold">My name is</span>
-              <div className="min-w-[160px] flex-1 relative">
+              <div className="min-w-[160px] mb-4 flex-1 relative">
                 <input 
                   type="text" 
                   placeholder="JOHN SMITH" 
@@ -199,7 +199,7 @@ export default function ContactForm() {
               </div>
 
               <span className="text-3xl font-bold">and I have a</span>
-              <div className="min-w-[200px] flex-1 relative">
+              <div className="min-w-[200px] mb-4 flex-1 relative">
                 <input 
                   type="text" 
                   placeholder="WEBSITE OR APP DESIGN OR ETC" 
@@ -218,7 +218,7 @@ export default function ContactForm() {
               </div>
 
               <span className="text-3xl font-bold">that needs help. You can reach me at</span>
-              <div className="min-w-[220px] flex-1 relative">
+              <div className="min-w-[220px] mb-4 flex-1 relative">
                 <input 
                   type="email" 
                   placeholder="YOUR EMAIL ADDRESS" 
@@ -272,11 +272,7 @@ export default function ContactForm() {
               </button>
             </div>
 
-            {/* Debug info - remove in production */}
-            <div className="mt-4 text-xs text-gray-500">
-              <p>Debug: Form Valid = {isFormValid().toString()}</p>
-              <p>Errors: {JSON.stringify(errors)}</p>
-            </div>
+            
           </div>
 
         </div>

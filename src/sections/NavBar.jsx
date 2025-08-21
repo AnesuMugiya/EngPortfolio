@@ -73,7 +73,7 @@ const NavBar = () => {
           {/* Logo/Name */}
           <a 
             href="#home" 
-            className="text-2xl font-bold text-[#9945ac] transition hover:text-[#341539]"
+            className="text-2xl font-bold text-[#b650cd] transition hover:text-[#341539]"
           >
             Anesu.
           </a>
