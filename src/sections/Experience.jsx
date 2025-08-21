@@ -71,7 +71,7 @@ const Experience = () => {
           <div className="timeline-column relative">
             {/* Continuous gradient line positioned to go through dots */}
             <div className="absolute left-[5px] top-[70px] w-px h-full overflow-hidden">
-              <span className="gradient-line absolute top-0 left-0 w-full h-full bg-gradient-to-b from-amber-400 via-yellow-300 to-white/60" />
+              {/* <span className="gradient-line absolute top-0 left-0 w-full h-full bg-gradient-to-b from-amber-400 via-yellow-300 to-white/60" /> */}
               <span className="timeline absolute top-0 left-0 w-full h-full bg-gradient-to-b from-amber-400 via-yellow-300 to-white/60" />
             </div>
 
@@ -109,7 +109,7 @@ const Experience = () => {
           <div className="timeline-column relative">
             {/* Continuous gradient line positioned to go through dots */}
             <div className="absolute left-[5px] top-[70px] w-px h-full overflow-hidden">
-              <span className="gradient-line absolute top-0 left-0 w-full h-full bg-gradient-to-b from-fuchsia-400 via-purple-400 to-indigo-300" />
+              {/* <span className="gradient-line absolute top-0 left-0 w-full h-full bg-gradient-to-b from-fuchsia-400 via-purple-400 to-indigo-300" /> */}
               <span className="timeline absolute top-0 left-0 w-full h-full bg-gradient-to-b from-fuchsia-400 via-purple-400 to-indigo-300" />
             </div>
 

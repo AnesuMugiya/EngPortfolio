@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <section id="about" className="flex-center section-padding">
+    <section id="about" className="relative py-20 px-4 sm:px-6 lg:px-8 min-h-screen">
       <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
               <img src="/images/me.png" alt="mockup"></img>
@@ -32,11 +32,13 @@ function About() {
                   Download CV
               </a> 
           </div>
-                  {/* Additional floating elements */}
+            
       
       </div>
 
-      
+      {/* Additional floating elements */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-xl animate-pulse delay-700"></div>
+      <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-pink-400/20 to-blue-400/20 rounded-full blur-xl animate-pulse delay-1000"></div>
     </section>
   );
 }
