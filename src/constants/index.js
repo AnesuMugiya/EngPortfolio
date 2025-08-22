@@ -31,24 +31,22 @@ const eduCards = [
     title: "BSc(Eng) in Electrical and Computer Engineering (Hons) — University of Cape Town",
     date: "Feb 2022 – Present",
     thesis:
-      "Flexibility Progress Tracker. Designed and implemented a proof-of-concept system that uses markerless motion capture and pose estimation to quantitatively track flexibility improvements in athletes.",
+      "For my thesis I'm making a Flexibility Progress Tracker. Designing and implementing a proof-of-concept system that uses markerless motion capture and pose estimation to quantitatively track flexibility improvements in athletes.",
   },
   {
     title: "Practical Training — Cape Peninsula University of Technology",
     date: "Nov 2022 – Dec 2023",
     thesis: [
       "Developed proficiency in basic hand skills, fitting and turning, and metrology for precision measurement.",
-      "Gained experience in pneumatics, automation, and PLC programming for system control and efficiency.",
-      "Acquired hands-on competence in G-code, M-code, CNC machining, and arc welding for manufacturing processes."
+      " Gained experience in pneumatics, automation, and PLC programming for system control and efficiency.",
+      " Acquired hands-on competence in G-code, M-code, CNC machining, and arc welding for manufacturing processes."
     ],
   },
     {
     title: "Secondary Education — Riverton Academy",
     date: "Jan 2016 – Dec 2022",
     thesis: [
-      "Developed proficiency in basic hand skills, fitting and turning, and metrology for precision measurement.",
-      "Gained experience in pneumatics, automation, and PLC programming for system control and efficiency.",
-      "Acquired hands-on competence in G-code, M-code, CNC machining, and arc welding for manufacturing processes."
+      "Graduated with 20 Points in A’Level (2021) and with 11 distinctions in O’Level (2019)"
     ],
   },
 ];

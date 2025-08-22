@@ -129,7 +129,7 @@ const Experience = () => {
 
                     {edu.thesis && (
                       <>
-                        <p className="text-[#f4c331] italic mt-3">Project</p>
+                        <p className="text-[#f4c331] italic mt-3">Notable</p>
                         <p className="text-white/70 mt-2">{edu.thesis}</p>
                       </>
                     )}
